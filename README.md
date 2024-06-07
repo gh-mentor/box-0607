@@ -1,4 +1,4 @@
-## Welcome to the GitHub Copilot Developer Training
+## Welcome to GitHub Copilot Developer Training for Box 
 
 Instructor: Andrew Scoppa
 

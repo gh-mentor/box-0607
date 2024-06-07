@@ -77,20 +77,4 @@ BEGIN
     SELECT * FROM [dbo].[Categories];
 END;
 
--- Create a stored procedure to get all products in a specific category
-IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[GetProductsByCategory]') AND type in (N'P'))
-BEGIN
-    DROP PROCEDURE [dbo].[GetProductsByCategory];
-END;
-
-CREATE PROCEDURE [dbo].[GetProductsByCategory]
-    @CategoryId INT
-AS
-BEGIN
-    SELECT * FROM [dbo].[Products] WHERE CategoryId = @CategoryId;
-END;
-
--- Create a stored procedure to get all products in a specific price range sorted by price in ascending order
-IF EXISTS (SELECT * FROM sys.objects WHERE
-
 
